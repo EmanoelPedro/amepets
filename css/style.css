@@ -6,6 +6,8 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+
+    font-family: 'Ubuntu';
 }
 a{
     text-decoration: none;
@@ -14,11 +16,107 @@ ul,ol {
     list-style: none;
 }
 
+.main_header {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9EFF00;
+    position: fixed;
+}
+
+.main_header nav ul li{
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    margin: 60px;
+}
+
+.main_header nav a {
+    color: #fff;
+    padding: 10px;
+}
+
 .main_slide {
-    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh + 2rem);
+    padding-top: 4rem;
     background-image: url(../img/main_slide.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     overflow: hidden;
+    text-align: center;
+    color: #fbfbfb;
+}
+
+.main_slide h1 {
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.main_slide p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-top: 14px;
+}
+
+.main_slide a {
+    font-size: 1.342rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 15px;
+    padding: 19px 74px 14px 74px;
+    color: #fff;
+    background-color: #9EFF00;
+    border: solid 1px #67A107;
+    border-radius: 5px;
+}
+.main_slide a:hover {
+    transition: 500ms;
+    background-color: #78c201;
+}
+
+.main_about {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main_about header {
+    margin: 5rem 0;
+}
+
+.main_about header h1 {
+    font-size: 1.5625rem;
+    color: #222;
+}
+.main_about header p {
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-top: 7px;
+}
+
+.main_about_items {
+    width: 90vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.main_about_items article {
+    width: 15rem;
+}
+
+.main_about_items article img {
+    max-width: 100%;
 }
