@@ -16,6 +16,26 @@ ul,ol {
     list-style: none;
 }
 
+.btn {
+    margin: 60px auto;
+    padding: 22px 40px 20px 40px;
+    text-transform: uppercase;
+    font-size: 1.3125rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #78c201;
+    border: solid 1px #67A107;
+    transition: 500ms;
+}
+
+.radius {
+    border-radius: 6px;
+}
+
+.btn:hover{
+    transition: 500ms;
+}
+
 .main_header {
     width: 100%;
     height: 4rem;
@@ -109,14 +129,104 @@ ul,ol {
     width: 90vw;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 auto;
 }
 
 .main_about_items article {
-    width: 15rem;
+    width: 20rem;
+}
+
+.main_about_items article h1 {
+    font-size: 1.4375rem;
+    color: #333333;
+}
+
+.main_about_items article p {
+    font-size: 1rem;
+    color: #444444;
+    margin: 5px 0;
 }
 
 .main_about_items article img {
-    max-width: 100%;
+    max-width: 35%;
+    margin-bottom: 20px;
+}
+
+.main_about a:hover {
+    background-color: #67A107;
+}
+
+.secondary_slide {
+    height: 70vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+    background-image: url('../img/banner.png');
+    background-size: cover;
+}
+
+.secondary_slide h1 {
+    color: #fff;
+    margin: 10%;
+    font-size: 2.1875rem;
+}
+
+.main_striking_stories {
+    width: 90vw;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 auto;
+    background-color: #EEF1F3;
+}
+
+.main_striking_stories a {
+    margin: 10px auto;
+}
+
+.main_striking_stories header {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.main_striking_stories div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main_striking_stories div article {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.main_striking_stories div article img {
+    width: 260px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.main_striking_stories div article h1 {
+    text-transform: uppercase;
+    margin: 20px 0 5px 0;
+    font-size: 1.37rem;
+    color: #222;
+}
+
+.main_striking_stories div article p {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.main_striking_stories div article a {
+    color: #8E8D8D;
+}
+
+.main_striking_stories div article a:hover {
+    color: #555;
+    transition: 500ms;
 }

@@ -1,5 +1,5 @@
 
-const menuItems = document.querySelectorAll('.main_header nav a[href^="#"]');
+const menuItems = document.querySelectorAll('a[href^="#"]');
 
 menuItems.forEach(item => {
   item.addEventListener('click', scrollToIdOnClick);
@@ -18,7 +18,7 @@ function scrollToIdOnClick(event) {
 
 function scrollToPosition(to) {
 
-  smoothScrollTo(0, to,700);
+  smoothScrollTo(0, to,900);
 }
 
 /**
