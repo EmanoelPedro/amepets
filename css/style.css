@@ -44,6 +44,7 @@ ul,ol {
     align-items: center;
     background-color: #9EFF00;
     position: fixed;
+    overflow: hidden;
 }
 
 .main_header nav ul li{
@@ -229,4 +230,76 @@ ul,ol {
 .main_striking_stories div article a:hover {
     color: #555;
     transition: 500ms;
+}
+
+.main_donation {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.main_donation header {
+    text-align: center;
+    margin-top: 75px;
+}
+.main_donation header h1 {
+    color: #222;
+}
+
+.main_donation header p {
+    color: #333;
+}
+
+.main_donation_items{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.main_donation_items div {
+    flex-basis: 16rem;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 1.6rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.main_donation .btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 22px 0px 20px 0px;
+    margin: 1rem 0 2rem 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    background-color: #34E7E4;
+    border: none;
+}
+
+.main_donation .btn:hover {
+    background-color: #0BC2BF;
+}
+
+.main_donation .main_donation_contact {
+    height: 31.5vh;
+    background-color: #34E7E4;
+    text-align: center;
+}
+
+.main_donation .main_donation_contact p {
+    text-align: center;
+    margin: 2rem auto;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.main_donation .main_donation_contact .btn {
+    font-size: 1.1rem;
+    background-color: #0BC2BF;
+    padding: 22px 100px 20px 100px;
+}
+
+.main_donation .main_donation_contact .btn:hover{
+    background-color: #0bb3b0;
 }
