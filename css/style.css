@@ -22,10 +22,20 @@ ul,ol {
     text-transform: uppercase;
     font-size: 1.3125rem;
     font-weight: 500;
+    text-align: center;
     color: #fff;
     background-color: #78c201;
     border: solid 1px #67A107;
     transition: 500ms;
+}
+
+.btn:hover {
+    background-color: #67A107;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
 }
 
 .radius {
@@ -37,20 +47,21 @@ ul,ol {
 }
 
 .main_header {
+    max-width: 100vw;
     width: 100%;
     height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #9EFF00;
     position: fixed;
-    overflow: hidden;
 }
 
 .main_header nav ul li{
     text-transform: uppercase;
     font-weight: bold;
-    display: inline-block;
+    display: inline;
     margin: 60px;
 }
 
@@ -64,12 +75,13 @@ ul,ol {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    height: calc(100vh + 2rem);
+    height: calc(95vh);
     padding-top: 4rem;
     background-image: url(../img/main_slide.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     overflow: hidden;
     text-align: center;
     color: #fbfbfb;
@@ -77,17 +89,20 @@ ul,ol {
 
 .main_slide h1 {
     font-size: 1.875rem;
+    text-shadow: 1px 2px 5px rgba(0,0,0,0.9);
     text-transform: uppercase;
     margin-top: 50px;
 }
 
-.main_slide p{
-    font-size: 1.4rem;
-    font-weight: 300;
+.main_slide  p{
+    font-size: 1.3rem;
+    font-weight: 400;
     margin-top: 14px;
+    margin-bottom: 30px;
 }
 
 .main_slide a {
+    display: inline-block;
     font-size: 1.342rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -98,7 +113,7 @@ ul,ol {
     border: solid 1px #67A107;
     border-radius: 5px;
 }
-.main_slide a:hover {
+.main_slide  a:hover {
     transition: 500ms;
     background-color: #78c201;
 }
@@ -109,21 +124,21 @@ ul,ol {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .main_about header {
-    margin: 5rem 0;
+    margin: 5rem 0 3rem 0;
 }
 
 .main_about header h1 {
-    font-size: 1.5625rem;
+    font-size: 1.7rem;
     color: #222;
 }
 .main_about header p {
     color: #333;
-    font-size: 1.1rem;
-    font-weight: 300;
-    margin-top: 7px;
+    font-size: 1rem;
+    margin-top: 15px;
 }
 
 .main_about_items {
@@ -135,7 +150,8 @@ ul,ol {
 }
 
 .main_about_items article {
-    width: 20rem;
+    width: calc(20rem - 40px);
+    margin: 20px;
 }
 
 .main_about_items article h1 {
@@ -154,8 +170,8 @@ ul,ol {
     margin-bottom: 20px;
 }
 
-.main_about a:hover {
-    background-color: #67A107;
+.main_about .btn {
+    margin-top: 25px;
 }
 
 .secondary_slide {
@@ -178,16 +194,16 @@ ul,ol {
     width: 90vw;
     display: flex;
     flex-flow: column wrap;
-    margin: 0 auto;
-    background-color: #EEF1F3;
+    margin: 10px auto;
 }
 
 .main_striking_stories a {
     margin: 10px auto;
 }
 
-.main_striking_stories header {
+.main_striking_stories header h1 {
     text-align: center;
+    font-size: 1.7em;
     margin-top: 90px;
     margin-bottom: 30px;
     color: #333;
@@ -195,9 +211,10 @@ ul,ol {
 
 .main_striking_stories div {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+
 }
 
 .main_striking_stories div article {
@@ -219,8 +236,8 @@ ul,ol {
 }
 
 .main_striking_stories div article p {
-    color: #333;
-    margin-bottom: 10px;
+    color: #444;
+    margin-bottom: 20px;
 }
 
 .main_striking_stories div article a {
@@ -243,10 +260,13 @@ ul,ol {
 }
 .main_donation header h1 {
     color: #222;
+    font-size: 1.7em;
+
 }
 
 .main_donation header p {
     color: #333;
+    margin-top: 10px;
 }
 
 .main_donation_items{
@@ -260,7 +280,6 @@ ul,ol {
     display: flex;
     flex-flow: column nowrap;
     margin: 1.6rem;
-    margin-bottom: 0;
     text-align: center;
 }
 
@@ -305,20 +324,26 @@ ul,ol {
 }
 
 .main_location {
-    height: 81vh;
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-content: center;
+    margin-top: 60px;
 }
-.main_location header {
-    margin: 0 auto;
-    text-align: center;
+.main_location header h1 {
+    margin: 10px auto;
     color: #222;
+    text-align: center;
+    font-size: 1.7rem;
+}
+.main_location header p {
+    text-align: center;
 }
 
 .main_location_content {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 5vh auto;
 }
@@ -338,8 +363,9 @@ ul,ol {
 
 .main_footer{
     max-width: 100%;
-    height: 10vh;
+    padding: 20px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     background: #333;
@@ -376,4 +402,81 @@ ul,ol {
 .footer_social a:hover {
     color: #9EFF00;
     transition: 500ms;
+}
+
+@media (max-width: 25rem) {
+
+    .main_header nav a {
+        margin: 10px;
+    }
+    .main_slide h1{
+        font-size: 1.4rem;
+    }
+    .main_slide p {
+        font-size: 0.875rem;
+        margin: 10px 20px;
+    }
+
+    .main_slide a {
+        padding: 15px 40px;
+    }
+
+    .main_about_items article {
+        margin: 20px auto;
+    }
+
+    .secondary_slide h1 {
+        font-size: 1.8rem;
+
+    }
+
+    .main_striking_stories div article {
+        margin: 20px auto;
+    }
+
+    .main_donation .main_donation_contact {
+        height: 50vh;
+    padding: 10px;
+    }
+   .main_donation .main_donation_contact p {
+        font-size: 1.25rem;
+       color: #111;
+    }
+
+   .main_donation .main_donation_contact .btn {
+       font-size: 1rem;
+       padding: 20px 60px;
+   }
+
+    .main_location header h1 {
+        font-size: 1.4rem;
+        margin-top: 30px;
+    }
+
+    .main_location_content img{
+        width: 17rem;
+        margin: 5px auto;
+    }
+
+    .main_location_content div p {
+        font-size: 1rem;
+        line-height: 2;
+    }
+
+
+    .footer_terms {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .footer_copy {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .footer_social {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 5px 0;
+    }
 }
