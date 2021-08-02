@@ -404,7 +404,7 @@ ul,ol {
     transition: 500ms;
 }
 
-@media (max-width: 25rem) {
+@media (max-width: 25.76rem) {
 
     .main_header nav a {
         margin: 10px;
